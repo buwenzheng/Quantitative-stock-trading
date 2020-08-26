@@ -37,6 +37,7 @@ def ndarray_test():
 
 stock_data = np.random.normal(loc=10, scale=1.0, size=1000)
 stock_data = np.around(stock_data, 2)
+
 # print('stock_data: \n {}'.format(stock_data))
 pct_change = np.around((stock_data - np.roll(stock_data, 1))/np.roll(stock_data,1), 2)
 pct_change[0] = np.nan
